@@ -1,0 +1,86 @@
+/* Basic styles */
+* {
+	font-family: helvetica, arial, sans-serif;
+	margin: 0 0 0 0;
+}
+body {
+	padding: 2%;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 5%;
+	font-size: 175%;
+}
+.col-lg, .col-md-6, .col-md-12, .col-sm {
+	border: 1px solid black;
+	background-color: #bae0d1;
+	box-sizing: border-box;
+}
+h2 {
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	float: right;
+	clear: left;
+	width: 33%;
+	text-align: center;
+}
+#c-head {
+	background-color: #b1dcec;
+}
+#b-head {
+	background-color: #fffff0;
+}
+#s-head {
+	background-color: #fbe39d;
+}
+.article {
+	margin: 12% 5% 5% 5%;
+} 
+/* Applies for small devices */
+@media (max-width: 767px) {
+    .row {
+    	display: flex;
+    	flex-direction: column;
+    }
+    .col-sm {
+    	width: 95%;
+    	margin-top: 5%;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+    h2 {
+    	font-size: 90%;
+    }
+}
+/* Applies for medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+	body {
+		padding-left: 10%;
+	}
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+    .col-md-6 {
+    	width: 43%;
+    	margin-right: 4%;
+
+    }
+    .col-md-12 {
+    	margin-top: 4%;
+    	width: 90%;
+    }
+}
+/* Applies for large devices*/
+@media (min-width: 992px) {
+	.row {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.col-lg {
+		width: 30%;
+		margin-right: 3%;
+	}
+}
